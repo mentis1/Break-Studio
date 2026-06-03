@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Break Studio — Estudio Creativo de Relaciones Públicas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cooper+Black&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <a href="#main" class="sr-only skip-link">Saltar al contenido</a>
+
+  <!-- HEADER -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+
+      <!-- LOGO (PNG) con animación -->
+      <a href="#home" class="logo" aria-label="Break Studio — inicio">
+        <img
+          src="img/logo.png"
+          alt="Break Studio"
+          class="logo-img"
+          width="140"
+          height="48"
+          loading="eager"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+        />
+        <!-- Fallback SVG si no hay PNG -->
+        <span class="logo-fallback" style="display:none;" aria-hidden="true">
+          <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="44" height="44" rx="4" fill="#cc1d37"/>
+            <text x="5" y="31" font-family="'Cooper Black', serif" font-size="22" fill="#f3eae0" letter-spacing="-1">BS</text>
+            <line x1="5" y1="37" x2="39" y2="37" stroke="#f3eae0" stroke-width="2.5"/>
+          </svg>
+          <span class="logo-text">Break Studio</span>
+        </span>
+      </a>
+
+      <!-- NAV desktop -->
+      <nav class="main-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="mailto:villarperezd@gmail.com" class="btn btn-nav btn-primary">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile nav -->
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Navegación móvil">
+      <ul>
+        <li><a href="#home" class="mobile-link">Home</a></li>
+        <li><a href="#services" class="mobile-link">Services</a></li>
+        <li><a href="#about" class="mobile-link">About Us</a></li>
+        <li><a href="mailto:villarperezd@gmail.com" class="mobile-link">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ══════════ HOME ══════════ -->
+    <section id="home" class="section-home">
+      <div class="home-noise"></div>
+
+      <div class="home-content">
+        <div class="hero-badge fade-in">✦ Agencia de Comunicación</div>
+        <h1 class="hero-title fade-in delay-1">BREAK<br><span class="outline-text">THE</span><br>RULES!</h1>
+        <p class="hero-subtitle cooper fade-in delay-2">ESTUDIO CREATIVO<br>DE RELACIONES PÚBLICAS</p>
+        <div class="hero-divider fade-in delay-3"></div>
+        <p class="hero-description fade-in delay-3">
+          <strong class="cooper diff-title">DIFERÉNCIATE DE TU COMPETENCIA</strong><br>
+          Conseguimos notoriedad en prensa para tu marca, conectamos con creadores de contenido y líderes de opinión, organizamos los mejores eventos y creamos una estrategia personalizada para tus redes sociales.
+        </p>
+        <a href="mailto:villarperezd@gmail.com" class="btn btn-primary fade-in delay-4">Hablemos →</a>
+      </div>
+
+      <!-- Ticker -->
+      <div class="ticker-wrap" aria-hidden="true">
+        <div class="ticker">
+          <span>RELACIONES PÚBLICAS</span><span class="sep">✦</span>
+          <span>BRANDING</span><span class="sep">✦</span>
+          <span>INFLUENCER MARKETING</span><span class="sep">✦</span>
+          <span>EVENTOS</span><span class="sep">✦</span>
+          <span>REDES SOCIALES</span><span class="sep">✦</span>
+          <span>MARCA PERSONAL</span><span class="sep">✦</span>
+          <span>RELACIONES PÚBLICAS</span><span class="sep">✦</span>
+          <span>BRANDING</span><span class="sep">✦</span>
+          <span>INFLUENCER MARKETING</span><span class="sep">✦</span>
+          <span>EVENTOS</span><span class="sep">✦</span>
+          <span>REDES SOCIALES</span><span class="sep">✦</span>
+          <span>MARCA PERSONAL</span><span class="sep">✦</span>
+        </div>
+      </div>
+
+      <!-- Pillars -->
+      <div class="pillars-grid">
+        <div class="pillar fade-in">
+          <h3>Relaciones Públicas</h3>
+          <ul>
+            <li>Posicionamiento en Prensa</li>
+            <li>Eventos</li>
+            <li>Influencers</li>
+            <li>Media Plan</li>
+          </ul>
+        </div>
+        <div class="pillar fade-in delay-1">
+          <h3>Redes Sociales</h3>
+          <ul>
+            <li>Creación de Contenido</li>
+            <li>Community Management</li>
+          </ul>
+        </div>
+        <div class="pillar fade-in delay-2">
+          <h3>Imagen Corporativa</h3>
+          <ul>
+            <li>Branding</li>
+            <li>Lenguaje Propio</li>
+            <li>Estrategia de Marca</li>
+          </ul>
+        </div>
+        <div class="pillar fade-in delay-3">
+          <h3>Marca Personal</h3>
+          <ul>
+            <li>Creación de Contenido</li>
+            <li>Posicionamiento en Medios</li>
+            <li>Gestión de Redes Sociales</li>
+            <li>Contacto con Clientes</li>
+            <li>Estrategia</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ SERVICES ══════════ -->
+    <section id="services" class="section-services">
+      <div class="services-header fade-in">
+        <span class="section-label">— Servicios</span>
+        <h2 class="cooper section-title-main">SERVICIO DE RELACIONES<br>PÚBLICAS A MEDIDA</h2>
+        <p class="services-intro">Te ayudamos a diferenciarte de tu competencia y a conseguir una <strong>imagen de marca única</strong></p>
+      </div>
+
+      <div class="services-grid">
+
+        <article class="service-card fade-in">
+          <div class="service-card-img">
+            <img src="img/rp.jpg" alt="Relaciones Públicas — reunión de prensa" width="600" height="360" loading="lazy" onerror="this.style.display='none'">
+            <div class="card-img-fallback" aria-hidden="true"></div>
+          </div>
+          <div class="service-card-body">
+            <span class="service-number">01</span>
+            <h3>Relaciones Públicas</h3>
+            <p>Analizamos la trayectoria de nuestros clientes, fijamos objetivos y creamos las estrategias perfectas para conseguir tus metas a través de una comunicación adecuada y la experiencia de 10 años en el sector. Buscamos elevar tu marca a través de estrategias que incluyen el posicionamiento en prensa, la producción de eventos y una buena relación con influencers y talentos.</p>
+          </div>
+        </article>
+
+        <article class="service-card fade-in delay-1">
+          <div class="service-card-img">
+            <img src="img/eventos.jpg" alt="Eventos — producción y concepto único" width="600" height="360" loading="lazy" onerror="this.style.display='none'">
+            <div class="card-img-fallback" aria-hidden="true"></div>
+          </div>
+          <div class="service-card-body">
+            <span class="service-number">02</span>
+            <h3>Eventos</h3>
+            <p>Creamos un concepto único y producimos de forma efectiva todo tipo de eventos: fiestas, eventos en tienda, convocatorias de influencers y talentos, presentaciones a prensa... negociando con nuestros proveedores los mejores precios para ti. ¡Nos encargamos de todos los detalles!</p>
+          </div>
+        </article>
+
+        <article class="service-card fade-in">
+          <div class="service-card-img">
+            <img src="img/rrss.jpg" alt="Redes Sociales — creación de contenido" width="600" height="360" loading="lazy" onerror="this.style.display='none'">
+            <div class="card-img-fallback" aria-hidden="true"></div>
+          </div>
+          <div class="service-card-body">
+            <span class="service-number">03</span>
+            <h3>Redes Sociales</h3>
+            <p>Somos expertas en la creación de contenido ad hoc para tu marca o negocio, conceptualizando una imagen única que conecte con tu audiencia. Gestionamos por ti el community management de tus redes sociales con el fin de crear un sentimiento de pertenencia a tu comunidad y un lenguaje representativo de los valores de tu marca.</p>
+          </div>
+        </article>
+
+        <article class="service-card fade-in delay-1">
+          <div class="service-card-img">
+            <img src="img/branding.jpg" alt="Branding e imagen corporativa" width="600" height="360" loading="lazy" onerror="this.style.display='none'">
+            <div class="card-img-fallback" aria-hidden="true"></div>
+          </div>
+          <div class="service-card-body">
+            <span class="service-number">04</span>
+            <h3>Branding e Imagen de Marca</h3>
+            <p>¿Quieres una imagen de marca única? Te ayudamos a transformar los valores de tu marca en una imagen atractiva para tus clientes. Contamos con un equipo de diseño gráfico in house que te aconsejará en todo el proceso. Encuentra un lenguaje propio e imagen corporativa para hacer crecer tu comunidad.</p>
+          </div>
+        </article>
+
+        <article class="service-card fade-in">
+          <div class="service-card-img">
+            <img src="img/influencer.jpg" alt="Influence Marketing — líderes de opinión" width="600" height="360" loading="lazy" onerror="this.style.display='none'">
+            <div class="card-img-fallback" aria-hidden="true"></div>
+          </div>
+          <div class="service-card-body">
+            <span class="service-number">05</span>
+            <h3>Influence Marketing</h3>
+            <p>Conectamos tu marca con líderes de opinión, desde grandes talentos a perfiles con nichos de influencia que te ayuden a conseguir tus objetivos de posicionamiento, venta o brand awareness. Ofrecemos acciones de seeding orgánico y contamos con una larga trayectoria en la negociación de campañas de influence marketing.</p>
+          </div>
+        </article>
+
+        <!-- MARCA PERSONAL — misma estructura, colores invertidos -->
+        <article class="service-card service-card--inverted fade-in delay-1">
+          <div class="service-card-img service-card-img--inverted">
+            <img src="img/marcapersonal.jpg" alt="Marca Personal — creadores de contenido" width="600" height="360" loading="lazy" onerror="this.style.display='none'">
+            <div class="card-img-fallback card-img-fallback--inverted" aria-hidden="true"></div>
+          </div>
+          <div class="service-card-body">
+            <span class="service-number">06</span>
+            <h3>¿Eres una Marca Personal?</h3>
+            <p>Un servicio enfocado a creadores de contenido y agencias de influencers. Llevamos nuestra experiencia al posicionamiento de influencers y talentos en prensa y medios. Les ayudamos con la creación de contenido publicitario para cumplir con el briefing del cliente y a generar contenido editorial orgánico, gracias a nuestra amplia red de contactos en medios.</p>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Portfolio CTA -->
+      <div class="portfolio-cta fade-in">
+        <p>¿Quieres conocer nuestro trabajo en detalle?</p>
+        <button class="btn btn-primary" onclick="downloadPortfolio()">
+          Descargar Portfolio ↓
+        </button>
+      </div>
+    </section>
+
+    <!-- ══════════ ABOUT US ══════════ -->
+    <section id="about" class="section-about">
+      <div class="about-label fade-in"><span class="section-label">— About Us</span></div>
+
+      <div class="about-grid">
+        <div class="about-person fade-in">
+          <div class="person-img-wrap">
+            <img src="img/elena.jpg" alt="Elena Alba Fernández, Directora y fundadora de Break Studio" width="400" height="480" loading="lazy" onerror="this.parentElement.classList.add('no-img')">
+            <div class="person-img-fallback">EA</div>
+          </div>
+          <div class="person-info">
+            <h2>Elena Alba<br>Fernández</h2>
+            <p class="person-role">Comunicación & Relaciones Públicas</p>
+            <p>Dedicada a la comunicación y las relaciones públicas durante <strong>10 años</strong>. Elena es graduada en Periodismo, además de experta en Relaciones Públicas y con formación en Community Management. Trabajó para la revista <em>Harper's Bazaar</em> lo que le aportó una visión sobre el funcionamiento de una revista con soporte en papel y digital.</p>
+            <p>Después continuó su formación en <em>Loewe</em>, como Coordinadora de Showroom y Relaciones Públicas. Pero su mayor hito ha sido como <strong>Directora de Cuentas en agencia de Comunicación</strong>, puesto en el que ha estado durante 5 años. Estas experiencias le han aportado una visión global de la industria y una agenda de contactos indispensable para el crecimiento y posicionamiento de marcas.</p>
+          </div>
+        </div>
+
+        <div class="about-person about-person--right fade-in delay-2">
+          <div class="person-img-wrap">
+            <img src="img/carlota.jpg" alt="Carlota Palomo, Social Media y Branding de Break Studio" width="400" height="480" loading="lazy" onerror="this.parentElement.classList.add('no-img')">
+            <div class="person-img-fallback">CP</div>
+          </div>
+          <div class="person-info">
+            <h2>Carlota<br>Palomo</h2>
+            <p class="person-role">Social Media & Branding</p>
+            <p>Experta en el desarrollo de marcas y la creación de contenido para redes sociales. Tras tres años como <strong>Social Media Manager en agencia</strong>, se lanza a este proyecto para ofrecer su expertise y visión creativa a servicios y marcas que quieren crear una imagen corporativa propia y generar notoriedad.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ CONTACT ══════════ -->
+    <section id="contact" class="section-contact">
+      <div class="contact-inner fade-in">
+        <span class="section-label">— Contact</span>
+        <h2 class="contact-headline">¿Listo para<br><span class="outline-text-dark">romper</span><br>las reglas?</h2>
+        <p class="contact-sub">Cuéntanos tu proyecto y creemos algo que nadie pueda ignorar.</p>
+        <a href="mailto:villarperezd@gmail.com" class="btn btn-primary btn-contact">
+          Escríbenos →
+        </a>
+      </div>
+      <div class="contact-noise"></div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span class="footer-logo">Break Studio</span>
+      <span class="footer-copy">© 2025 Break Studio. Todos los derechos reservados.</span>
+      <a href="mailto:villarperezd@gmail.com" class="footer-email">villarperezd@gmail.com</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
