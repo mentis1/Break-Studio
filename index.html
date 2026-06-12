@@ -17,26 +17,17 @@
   <header class="site-header" id="site-header">
     <div class="header-inner">
 
-      <!-- LOGO (PNG) con animación -->
+      <!-- LOGO -->
       <a href="#home" class="logo" aria-label="Break Studio — inicio">
         <img
           src="img/logo.png"
+        
           alt="Break Studio"
           class="logo-img"
           width="140"
           height="48"
           loading="eager"
-          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
         />
-        <!-- Fallback SVG si no hay PNG -->
-        <span class="logo-fallback" style="display:none;" aria-hidden="true">
-          <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="44" height="44" rx="4" fill="#cc1d37"/>
-            <text x="5" y="31" font-family="'Cooper Black', serif" font-size="22" fill="#f3eae0" letter-spacing="-1">BS</text>
-            <line x1="5" y1="37" x2="39" y2="37" stroke="#f3eae0" stroke-width="2.5"/>
-          </svg>
-          <span class="logo-text">Break Studio</span>
-        </span>
       </a>
 
       <!-- NAV desktop -->
@@ -44,6 +35,7 @@
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#services">Services</a></li>
+          <li><a href="#cases">Cases</a></li>
           <li><a href="#about">About Us</a></li>
           <li><a href="mailto:villarperezd@gmail.com" class="btn btn-nav btn-primary">Contact Us</a></li>
         </ul>
@@ -59,6 +51,7 @@
       <ul>
         <li><a href="#home" class="mobile-link">Home</a></li>
         <li><a href="#services" class="mobile-link">Services</a></li>
+        <li><a href="#cases" class="mobile-link">Cases</a></li>
         <li><a href="#about" class="mobile-link">About Us</a></li>
         <li><a href="mailto:villarperezd@gmail.com" class="mobile-link">Contact Us</a></li>
       </ul>
@@ -210,7 +203,6 @@
           </div>
         </article>
 
-        <!-- MARCA PERSONAL — misma estructura, colores invertidos -->
         <article class="service-card service-card--inverted fade-in delay-1">
           <div class="service-card-img service-card-img--inverted">
             <img src="img/marcapersonal.jpg" alt="Marca Personal — creadores de contenido" width="600" height="360" loading="lazy" onerror="this.style.display='none'">
@@ -234,33 +226,82 @@
       </div>
     </section>
 
+    <!-- ══════════ CASOS DE ÉXITO ══════════ -->
+    <section id="cases" class="section-cases">
+      <div class="cases-header fade-in">
+        <span class="section-label">— Casos de Éxito</span>
+        <h2 class="cooper section-title-main">RESULTADOS QUE<br>HABLAN POR SÍ SOLOS</h2>
+        <p class="services-intro">Una selección de proyectos donde la estrategia y la creatividad se tradujeron en <strong>impacto real</strong></p>
+      </div>
+
+      <div class="cases-list">
+
+        <!-- Caso 1: foto izquierda -->
+        <article class="case-item fade-in">
+          <div class="case-img-wrap">
+            <img src="img/caso1.jpg" alt="Caso de éxito 1" width="700" height="525" loading="lazy" onerror="this.style.display='none'">
+            <div class="case-img-fallback"></div>
+          </div>
+          <div class="case-body">
+            <span class="case-number">01</span>
+            <span class="case-label">Relaciones Públicas · Eventos</span>
+            <h3>Nombre del<br>Proyecto</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </article>
+
+        <!-- Caso 2: foto derecha -->
+        <article class="case-item case-item--reverse fade-in delay-1">
+          <div class="case-img-wrap">
+            <img src="img/caso2.jpg" alt="Caso de éxito 2" width="700" height="525" loading="lazy" onerror="this.style.display='none'">
+            <div class="case-img-fallback"></div>
+          </div>
+          <div class="case-body">
+            <span class="case-number">02</span>
+            <span class="case-label">Branding · Redes Sociales</span>
+            <h3>Nombre del<br>Proyecto</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
     <!-- ══════════ ABOUT US ══════════ -->
     <section id="about" class="section-about">
       <div class="about-label fade-in"><span class="section-label">— About Us</span></div>
 
-      <div class="about-grid">
-        <div class="about-person fade-in">
-          <div class="person-img-wrap">
-            <img src="img/elena.jpg" alt="Elena Alba Fernández, Directora y fundadora de Break Studio" width="400" height="480" loading="lazy" onerror="this.parentElement.classList.add('no-img')">
-            <div class="person-img-fallback">EA</div>
-          </div>
-          <div class="person-info">
-            <h2>Elena Alba<br>Fernández</h2>
-            <p class="person-role">Comunicación & Relaciones Públicas</p>
-            <p>Dedicada a la comunicación y las relaciones públicas durante <strong>10 años</strong>. Elena es graduada en Periodismo, además de experta en Relaciones Públicas y con formación en Community Management. Trabajó para la revista <em>Harper's Bazaar</em> lo que le aportó una visión sobre el funcionamiento de una revista con soporte en papel y digital.</p>
-            <p>Después continuó su formación en <em>Loewe</em>, como Coordinadora de Showroom y Relaciones Públicas. Pero su mayor hito ha sido como <strong>Directora de Cuentas en agencia de Comunicación</strong>, puesto en el que ha estado durante 5 años. Estas experiencias le han aportado una visión global de la industria y una agenda de contactos indispensable para el crecimiento y posicionamiento de marcas.</p>
+      <div class="about-dna">
+        <div class="about-dna-text fade-in">
+          <h2>Nuestro<br><span class="outline-text">ADN</span></h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt.</p>
+          <div class="about-dna-values">
+            <div class="about-dna-value">
+              <strong>Creatividad</strong>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="about-dna-value">
+              <strong>Estrategia</strong>
+              <p>Sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            </div>
+            <div class="about-dna-value">
+              <strong>Resultados</strong>
+              <p>Ut enim ad minim veniam, quis nostrud exercitation.</p>
+            </div>
+            <div class="about-dna-value">
+              <strong>Conexión</strong>
+              <p>Duis aute irure dolor in reprehenderit in voluptate.</p>
+            </div>
           </div>
         </div>
 
-        <div class="about-person about-person--right fade-in delay-2">
-          <div class="person-img-wrap">
-            <img src="img/carlota.jpg" alt="Carlota Palomo, Social Media y Branding de Break Studio" width="400" height="480" loading="lazy" onerror="this.parentElement.classList.add('no-img')">
-            <div class="person-img-fallback">CP</div>
-          </div>
-          <div class="person-info">
-            <h2>Carlota<br>Palomo</h2>
-            <p class="person-role">Social Media & Branding</p>
-            <p>Experta en el desarrollo de marcas y la creación de contenido para redes sociales. Tras tres años como <strong>Social Media Manager en agencia</strong>, se lanza a este proyecto para ofrecer su expertise y visión creativa a servicios y marcas que quieren crear una imagen corporativa propia y generar notoriedad.</p>
+        <div class="about-dna-visual fade-in delay-2">
+          <div class="about-dna-visual-inner">
+            <span>BR</span>
           </div>
         </div>
       </div>
@@ -272,21 +313,38 @@
         <span class="section-label">— Contact</span>
         <h2 class="contact-headline">¿Listo para<br><span class="outline-text-dark">romper</span><br>las reglas?</h2>
         <p class="contact-sub">Cuéntanos tu proyecto y creemos algo que nadie pueda ignorar.</p>
-        <a href="mailto:villarperezd@gmail.com" class="btn btn-primary btn-contact">
-          Escríbenos →
-        </a>
+
+        <div class="contact-details">
+          <button class="contact-item" onclick="copyEmail('elena@breakstudiopr.com', this)" aria-label="Copiar email de Elena">
+            <span class="contact-item-icon">✉</span>
+            elena@breakstudiopr.com
+            <span class="copied-toast">¡Copiado!</span>
+          </button>
+          <button class="contact-item" onclick="copyEmail('carlota@breakstudiopr.com', this)" aria-label="Copiar email de Carlota">
+            <span class="contact-item-icon">✉</span>
+            carlota@breakstudiopr.com
+            <span class="copied-toast">¡Copiado!</span>
+          </button>
+          <a href="tel:+34606080912" class="contact-item contact-item--phone" aria-label="Llamar al 606 08 09 12">
+            <span class="contact-item-icon">📞</span>
+            606 08 09 12
+          </a>
+        </div>
+        <p class="contact-copy-hint">Haz clic en los emails para copiarlos</p>
       </div>
       <div class="contact-noise"></div>
     </section>
 
   </main>
 
-  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="footer-inner">
       <span class="footer-logo">Break Studio</span>
       <span class="footer-copy">© 2025 Break Studio. Todos los derechos reservados.</span>
-      <a href="mailto:villarperezd@gmail.com" class="footer-email">villarperezd@gmail.com</a>
+      <span class="footer-email" onclick="copyEmail('elena@breakstudiopr.com', this)" title="Clic para copiar" style="cursor:pointer">
+        elena@breakstudiopr.com
+        <span class="copied-toast" style="font-size:.7rem;background:var(--red);color:var(--beige);padding:.2rem .7rem;border-radius:999px;margin-left:.5rem;opacity:0;transition:opacity 200ms;display:inline-block;">¡Copiado!</span>
+      </span>
     </div>
   </footer>
 

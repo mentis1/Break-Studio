@@ -78,4 +78,28 @@ function downloadPortfolio() {
       alert('Coloca tu portfolio en la carpeta /pdf con el nombre "portfolio.pdf" para activar esta descarga.');
     });
 }
-window.downloadPortfolio = downloadPortfolio;
+// ── Copy email ────────────────────────────────────────
+function copyEmail(email, btn) {
+  navigator.clipboard.writeText(email).then(() => {
+    const toast = btn.querySelector('.copied-toast');
+    if (!toast) return;
+    toast.classList.add('show');
+    setTimeout(() => toast.classList.remove('show'), 1800);
+  }).catch(() => {
+    // Fallback for older browsers
+    const ta = document.createElement('textarea');
+    ta.value = email;
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand('copy');
+    ta.remove();
+    const toast = btn.querySelector('.copied-toast');
+    if (toast) {
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 1800);
+    }
+  });
+}
+window.copyEmail = copyEmail;
