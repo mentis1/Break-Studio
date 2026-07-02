@@ -200,8 +200,8 @@ h1,h2,h3,h4 { text-wrap: balance; line-height: 1.1; }
 
 /* Botón nav Contact Us (rojo + beige) */
 .btn-nav {
-  padding: .7rem 1.4rem;
-  min-height: 42px;
+  padding: .85rem 2.2rem;
+  min-height: 46px;
 }
 
 /* Hamburger */
@@ -479,33 +479,7 @@ section { position: relative; padding-inline: 1.25rem; }
   font-size: var(--text-base);
 }
 
-/* Carta MARCA PERSONAL — misma estructura, colores invertidos */
-.service-card--inverted {
-  background: var(--red);
-  border-color: var(--red);
-  color: var(--beige);
-}
-.service-card--inverted:hover {
-  background: var(--red-dark);
-  border-color: var(--red-dark);
-}
-.service-card--inverted .service-card-img {
-  background: linear-gradient(135deg, rgba(243,234,224,.25), rgba(243,234,224,.08));
-}
-.card-img-fallback--inverted {
-  background:
-    linear-gradient(135deg, rgba(243,234,224,.2), rgba(204,29,55,.5)),
-    repeating-linear-gradient(135deg, transparent 0 12px, rgba(243,234,224,.1) 12px 13px);
-}
-.service-card--inverted p {
-  color: rgba(243,234,224,0.82);
-}
-.service-card--inverted .service-number {
-  color: rgba(243,234,224,0.65);
-}
-.service-card--inverted h3 {
-  color: var(--beige);
-}
+
 /* Imagen en tarjeta invertida: zoom igual */
 .service-card--inverted:hover .service-card-img img {
   transform: scale(1.06) rotate(.5deg);
