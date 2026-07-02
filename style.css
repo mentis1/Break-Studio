@@ -200,8 +200,9 @@ h1,h2,h3,h4 { text-wrap: balance; line-height: 1.1; }
 
 /* Botón nav Contact Us (rojo + beige) */
 .btn-nav {
-  padding: .85rem 2.2rem;
+  padding: .5rem 1rem !important;
   min-height: 46px;
+  letter-spacing: .06em;
 }
 
 /* Hamburger */
